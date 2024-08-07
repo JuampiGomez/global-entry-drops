@@ -1,0 +1,13 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.max-w {
+  max-width: 200px;
+}
+
+.w-full {
+  width: 100%;
+}

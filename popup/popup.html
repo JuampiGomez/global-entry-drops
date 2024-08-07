@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bulma.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="">
+    <div class="container m-3">
+      <h1 class="title is-4">Global Entry Drops</h1>
+
+      <div class="field">
+        <label class="label">Status</label>
+        <span class="tag is-success">Running</span>
+        <span class="tag is-danger">Stopped</span>
+      </div>
+    </div>
+
+    <div class="container m-3">
+      <div class="field">
+        <label class="label">Location ID</label>
+        <div class="select">
+          <select name="" id="locationId">
+            <option value="los_angelos">Los Angeles</option>
+            <option value="seattle">Seattle</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Start Date</label>
+        <div class="control">
+          <input type="date" class="input max-w" id="startDate" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">End Date</label>
+        <div class="control">
+          <input type="date" class="input max-w" id="endDate" />
+        </div>
+      </div>
+    </div>
+
+    <div class="m-3">
+      <button class="button is-success is-fullwidth" id="startButton">
+        Save & Start
+      </button>
+    </div>
+
+    <div class="m-3">
+      <button class="button is-danger is-fullwidth" id="stopButton">
+        Stop
+      </button>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
